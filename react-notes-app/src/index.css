@@ -12,12 +12,27 @@ code {
     monospace;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-mode {
+  background-color: rgb(26, 24, 24);
+}
+
+.dark-mode h1 {
+  color: white;
+}
+
 .container {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+  min-height: 100vh;
 }
 
 .notes-list {
@@ -57,7 +72,7 @@ textarea:focus {
   outline: none;
 }
 
-.save {
+.button-style {
   background-color: #e1e1e1;
   border: none;
   border-radius: 15px;
@@ -68,7 +83,7 @@ textarea:focus {
   cursor: pointer;
 }
 
-.save:hover {
+.button-style:hover {
   background-color: #ededed;
   cursor: pointer;
 }
